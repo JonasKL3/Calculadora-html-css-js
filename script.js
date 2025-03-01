@@ -51,27 +51,24 @@ let int = document.getElementsByClassName("button");
 
 
 
+//this function for calculate result
          function calcular() {
           
-         
-        // Pegando o conteúdo do parágrafo
         let conteudoParagrafo = document.getElementById("meup").innerText;
 
-        // Calculando a equação usando eval (Cuidado: eval pode ser perigoso se usado com entrada do usuário)
+        
         let resultado = eval(conteudoParagrafo);
 
-        // Substituindo o conteúdo do parágrafo pelo resultado
+        
         document.getElementById("meup").innerText = resultado;
 
 }
 
-var negative = true
 
+//this function return negative number
 function mid(){
-  if (negative == false ){
-    meup.textContent = meup/2;
+  if (true) {
+    meup.textContent=-meup.textContent;
   }
-  else {
-    negative == true;
-  }
+  
 }
